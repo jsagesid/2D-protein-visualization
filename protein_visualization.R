@@ -409,10 +409,10 @@ domainPlot<-function(p.dat, x, y.chain = 0.05 , y.domain = 0.125 , y.region = 0.
 
 ###Remember to check or update the taxonomy file/object so it matches the species composition and order of the alignment
 
-taxonomy       <-read.csv("/Users/jenisage/Desktop/chap1_silico/gene_analysis/structure/strat_genes/dgat1/DGAT1_taxonomy.csv")      ### taxonomy info
-alignment      <-readAAStringSet("/Users/jenisage/Desktop/chap1_silico/gene_analysis/structure/strat_genes/dgat1/dgat1_trimmed_vis.fa")   ### read in FASN data (AA fasta file)
+taxonomy       <-read.csv("/path/to/DGAT1_taxonomy.csv")      ### taxonomy info
+alignment      <-readAAStringSet("/path/to/dgat1_trimmed.fa")   ### read in FASN data (AA fasta file)
 alignment_seq  <-AAStringSet(alignment)        ### make AAStringSet object from the alignment
-setwd("/Users/jenisage/Desktop/chap1_silico/gene_analysis/structure/strat_genes/dgat1")
+setwd("/path/to/wd")
 
 ###If going to analyse a different gene later save copies
 
