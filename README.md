@@ -46,9 +46,9 @@ A CSV file containing metadata for each sequence.
 
 Example:
 
-Species	seq.no	tax1	tax2	tax3
-human	1	Primates	Hominidae	Hominidae
-mouselemur	2	Primates	Cheirogaleidae	Cheirogaleidae
+Species	seq.no	tax1	tax2	tax3<br>
+human	1	Primates	Hominidae	Hominidae<br>
+mouselemur	2	Primates	Cheirogaleidae	Cheirogaleidae<br>
 mouse	3	Rodentia	Muridae	Muridae
 
 
