@@ -16,3 +16,54 @@ Key features of the script include:
 - Calculating summary statistics for amino acid diversity
 
 This approach helps link sequence evolution with functional protein structure, which can be particularly useful when investigating candidate adaptive mutations.
+
+**Input Files**
+
+The script requires two main inputs.
+
+1. Multiple Sequence Alignment
+
+A trimmed protein alignment in FASTA format.
+
+Example:
+
+>Homo_sapiens
+MTEYKLVVVGAGGVGKSALTIQLIQ
+>Phoca_vitulina
+MTEYKLVVVGAGGVGKSALTIQLIQ
+
+Requirements:
+
+- Protein alignment
+
+- Trimmed to remove poorly aligned regions
+
+- Sequence names must match those in the taxonomy file
+
+2. Taxonomy File
+
+A CSV file containing metadata for each sequence.
+
+Example:
+
+Species	seq.no	tax1	tax2	tax3
+human	1	Primates	Hominidae	Hominidae
+mouselemur	2	Primates	Cheirogaleidae	Cheirogaleidae
+mouse	3	Rodentia	Muridae	Muridae
+
+
+Requirements:
+
+- Must contain a column with sequence names
+
+- Names must exactly match those used in the MSA
+
+Output
+
+The script generates a 2D visualization of the protein including:
+
+- Annotated functional domains
+
+- Highlighted substitutions in focal species
+
+- Adjusted coordinates that account for alignment gaps
